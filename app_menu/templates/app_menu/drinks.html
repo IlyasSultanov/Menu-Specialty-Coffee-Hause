@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<header class="seker">
+    <h1>Seker - Напитки</h1>
+</header>
+{% endblock %}
+
+{% block content %}
+<nav class="seker_coffee">
+    <ul class="menu_coffee">
+        <li class="coffee">
+            <a class="menu_c">
+                <img src="{% static 'image/black_cof_seker.jpeg' %}" class="menu-img_coffee" title="Black Coffee">
+                <p>Black Coffee</p>
+            </a>
+        </li>
+        <a class="menu_c">
+            <img src="{% static 'image/IMG_6948.JPG' %}" class="menu-img_coffee" title="Cappuccino">
+        </a>
+        <a class="menu_c">
+            <img src="{% static 'image/IMG_6943.JPG' %}" class="menu-img_coffee" title="Cappuccino Citrus Cake">
+        </a>
+        <a class="menu_c">
+            <img src="{% static 'image/IMG_6942.JPG' %}" class="menu-img_coffee" title="Latte Citrus Rasbarry">
+        </a>
+        <a class="menu_c">
+            <img src="{% static 'image/IMG_6941.JPG' %}" class="menu-img_coffee" title="Latte Raf">
+        </a>
+        <a class="menu_c">
+            <img src="{% static 'image/IMG_6946.JPG' %}" class="menu-img_coffee" title="Ice Latte">
+        </a>
+        
+    </ul>
+</nav>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <header class="seker">
+        <h1>Seker - Блюда</h1>
+    </header>
+{% endblock %}
+
+{% block content %}
+<nav class="seker_dishes">
+    <ul class="menu_dish">
+        <li class="dish">
+            <a class="menu_d">
+                <img src="{% static 'image/IMG_7001.JPG' %}" class="menu-img_dish" title="Omlet">
+                <p>Diches</p>
+            </a>
+        </li>
+        <a class="menu_d">
+            <img src="{% static 'image/IMG_6992.JPG' %}" class="menu-img_dish" title="Baursuk">
+        </a>
+        <a class="menu_d">
+            <img src="{% static 'image/IMG_6991.JPG' %}" class="menu-img_dish" title="Krok Madam">
+        </a>
+        <a class="menu_d">
+            <img src="{% static 'image/IMG_6995.JPG' %}" class="menu-img_dish" title="Porridge With Banana">
+        </a>
+    </ul>
+</nav>
+
+{% endblock %}
